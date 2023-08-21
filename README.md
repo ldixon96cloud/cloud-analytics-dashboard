@@ -64,15 +64,15 @@ Welcome to the CloudDashboard-LAMP project repository! This project showcases th
 
 9. **Install java:**
    - Metabase requires Java to run. Install OpenJDK.
-     ''''bash
+     ```bash
      sudo apt install openjdk-11-jdk
-     ''''
+     ```
 
 10. **Download Metabase**
     - Go to the Metabase website and download the latest version of Metabase
-    ''''bash
+    ```bash
     wget https://downloads.metabase.com/v0.41.3/metabase.jar
-    ''''
+    ```
 
 11. **Run Metabase**
    - Run Metabase using the downloaded Jar File
