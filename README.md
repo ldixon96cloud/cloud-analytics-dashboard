@@ -65,11 +65,4 @@ Welcome to the CloudDashboard-LAMP project repository! This project showcases th
 9. **Additional Configuration:**
    - Customize Apache virtual hosts, MySQL configurations, and PHP settings according to your project's requirements.
 
-10. **Commit Changes:**
-    - Navigate to your local repository directory and commit your changes:
-      ```bash
-      git add README.md
-      git commit -m "Added Linode instance setup and LAMP stack installation instructions."
-      git push origin master
-      ```
 
