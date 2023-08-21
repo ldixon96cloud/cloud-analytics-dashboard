@@ -62,7 +62,23 @@ Welcome to the CloudDashboard-LAMP project repository! This project showcases th
      sudo rm /var/www/html/phpinfo.php
      ```
 
-9. **Additional Configuration:**
-   - Customize Apache virtual hosts, MySQL configurations, and PHP settings according to your project's requirements.
+9. **Install java:**
+   - Metabase requires Java to run. Install OpenJDK.
+     ''''bash
+     sudo apt install openjdk-11-jdk
+     ''''
+
+10. **Download Metabase**
+    - Go to the Metabase website and download the latest version of Metabase
+    ''''bash
+    wget https://downloads.metabase.com/v0.41.3/metabase.jar
+    ''''
+
+11. **Run Metabase**
+   - Run Metabase using the downloaded Jar File
+
+12. **Access Metabase**
+   - Access Metabase by visiting http://yourlinodeIPaddress:300
+
 
 
