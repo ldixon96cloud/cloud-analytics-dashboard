@@ -76,7 +76,6 @@ Welcome to the CloudDashboard-LAMP project repository! This project showcases th
 
 11. **Run Metabase**
    - Run Metabase using the downloaded Jar File
-
    ```bash
    java -jar metabase.jar
     ```
