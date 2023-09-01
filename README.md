@@ -98,6 +98,40 @@ Welcome to the CloudDashboard-LAMP project repository! This project showcases th
    sudo service mysql restart
    ```
 
+15. **Enable the Google Analytics 4 Data API**
+   - Go to the Google Cloud Console.
+   - Select your project or create a new one if necessary.
+   - In the left sidebar, navigate to "APIs & Services" > "Library."
+   - Search for "Google Analytics 4 Data API" and click on it.
+   - Click the "Enable" button to enable the API for your project.
+
+16. **Create a Service Account**
+   - In the Google Cloud Console, navigate to "APIs & Services" > "Credentials."
+   - Click the "Create credentials" dropdown and select "Service account key."
+   - Fill out the necessary information for your service account:
+   - Service account name: Provide a name for your service account.
+   - Role: Select the appropriate role based on your project's requirements. For Google Analytics access, consider using the "Editor" role.
+   - Key type: Choose "JSON" as the key type.
+   - Click the "Continue" button.
+   - In the next step, you will be prompted to set up the service account's permissions. If you're using this service account for Google Analytics, add the appropriate permissions for your Google Analytics 4 property.
+   - Click "Continue" and review the permissions.
+   - Click "Create" to create the service account and generate a JSON key file.
+
+17. **Save the JSON credentials File**
+   - After creating the service account, a JSON key file will be downloaded to your computer. Keep this file secure, as it contains sensitive information.
+   - Rename the JSON key file to something meaningful for your project, e.g., project-name-ga4-credentials.json.
+   - Place the JSON key file in a secure location within your project's directory, preferably outside of the public directory to ensure its security.
+
+18. **Add a new user in Google Analytics 4 Admin Panel**
+   - Log in to your Google Analytics 4 account.
+   - In the left sidebar, click on "Admin."
+   - Under the "Account" section, click on the account to which you want to grant access.
+   - Click on "User Management."
+   - Click the "+ Add users" button.
+   - In the "Email addresses" field, enter the email address associated with the service account you created earlier.
+   - Assign the appropriate permissions to the service account user. Typically, you would assign permissions like "Read & Analyze" or "Edit."
+   - Click "Add" to add the service account as a user with the specified permissions. 
+
 15. **Run Metabase**
    - Run Metabase using the downloaded Jar File
 
