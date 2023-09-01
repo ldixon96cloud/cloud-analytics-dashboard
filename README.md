@@ -74,15 +74,38 @@ Welcome to the CloudDashboard-LAMP project repository! This project showcases th
     wget https://downloads.metabase.com/v0.41.3/metabase.jar
     ```
 
-11. **Run Metabase**
+11. **Configure MySQL Bind Settings**
+   - You'll need to configure this setting in order to remotely connect to the MySQL server.
+   - The MySQL configuration file, typically named my.cnf, is located in the /etc/mysql/ directory. You'll need superuser privileges to edit it.
+ 
+   ```bash
+   sudo nano /etc/mysql/my.cnf
+   ```
+
+12. **Locate the 'bind-address' option**
+   - In the my.cnf file, look for the bind-address option. By default, it's often set to 127.0.0.1, which means MySQL only listens on the localhost. You need to change this to your server's public IP address to allow external connections.
+   
+   ```bash
+   bind-address = your_server_public_ip
+   ```
+13. **Save and exit**
+   - Save the changes you made to the my.cnf file and exit the text editor.
+
+14. **Restart MySQL**
+   - To apply the changes, restart the MySQL service.
+
+   ```bash
+   sudo service mysql restart
+   ```
+
+15. **Run Metabase**
    - Run Metabase using the downloaded Jar File
 
    ```bash
    java -jar metabase.jar
    ```
 
-
-12. **Access Metabase**
+16. **Access Metabase**
    - Access Metabase by visiting http://yourlinodeIPaddress:300
 
 
