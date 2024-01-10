@@ -1,9 +1,9 @@
-# lamp-dashboard
+# Google Analytics Data Pipeline + Visualization
 Leveraging Linode as the chosen cloud provider, this project seamlessly integrates server deployment, data analysis, and data visualization to provide valuable insights for marketing campaigns.
 
-# CloudDashboard-LAMP Project
+# What you'll learn...
 
-Welcome to the CloudDashboard-LAMP project repository! This project showcases the creation of a web-based dashboard application powered by a LAMP stack, hosted on Linode. Below are the steps to set up your development environment.
+This project showcases the creation of a web-based dashboard application powered by a LAMP stack, hosted on Linode. Below are the steps to set up your development environment.
 
 ## Linode Instance and LAMP Stack Setup
 
